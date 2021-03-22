@@ -7,6 +7,7 @@ VERSION=${1}
 CODENAME=$(. /etc/os-release && echo ${VERSION_CODENAME})
 
 NAME=ruby
+ARCH=$(uname -p)
 BUILD_ARGS=
 
 if [[ "${DEBUG}" == "true" ]]; then
@@ -18,5 +19,5 @@ ruby-build ${BUILD_ARGS} ${VERSION} /usr/local/${NAME}/${VERSION}
 
 /usr/local/${NAME}/${VERSION}/bin/ruby -v
 
-echo "Compressing ${NAME} ${VERSION} for ${CODENAME}"
-tar -cJf /cache/${NAME}-${VERSION}-${CODENAME}.tar.xz -C /usr/local/${NAME} ${VERSION}
+echo "Compressing ${NAME} ${VERSION} for ${CODENAME}-${ARCH}"
+tar -cJf /cache/${NAME}-${VERSION}-${CODENAME}-${ARCH}.tar.xz -C /usr/local/${NAME} ${VERSION}

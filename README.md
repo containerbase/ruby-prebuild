@@ -11,7 +11,7 @@ Prebuild Ruby releases used by [containerbase/buildpack](https://github.com/cont
 Build the image
 
 ```bash
-docker build -t builder --build-arg APT_PROXY=http://apt-proxy:3142 .
+docker build -t builder --build-arg APT_PROXY=http://apt-proxy:3142 --build-arg DISTRO=focal .
 ```
 
 Test the image
@@ -24,5 +24,8 @@ docker run --rm -it -v ${PWD}/.cache:/cache -e DEBURG=true builder 3.0.0
 
 Optional environment variables
 
-- `APT_PROXY`: Set an APT http proxy for installing build deps
-- `DEBUG`: Show verbose php build output
+| Name        | Description                                                   | Default   |
+| ----------- | ------------------------------------------------------------- | --------- |
+| `DISTRO`    | Set an ubuntu base distro, `focal` and `bionic` are supported | `focal`   |
+| `APT_PROXY` | Set an APT http proxy for installing build deps               | `<empty>` |
+| `DEBUG`     | Show verbose php build output                                 | `<empty>` |
