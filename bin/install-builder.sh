@@ -30,6 +30,9 @@ PREFIX=/usr/local ./ruby-build/install.sh
 
 mkdir -p /usr/local/ruby /cache
 
+#--------------------------------
+# cleanup
+#--------------------------------
 if [[ ! -z "${APT_PROXY+x}" ]]; then
   rm -f /etc/apt/apt.conf.d/99buildpack-proxy.conf
 fi
