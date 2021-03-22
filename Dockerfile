@@ -1,7 +1,7 @@
 #--------------------------------------
 # Ubuntu flavor
 #--------------------------------------
-ARG FLAVOR
+ARG DISTRO
 
 #--------------------------------------
 # base images
@@ -13,7 +13,7 @@ FROM ubuntu:focal@sha256:b4f9e18267eb98998f6130342baacaeb9553f136142d40959a1b46d
 #--------------------------------------
 # builder images
 #--------------------------------------
-FROM build-${FLAVOR} as builder
+FROM build-${DISTRO} as builder
 
 
 ENTRYPOINT [ "dumb-init", "--", "builder.sh" ]
