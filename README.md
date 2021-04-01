@@ -1,6 +1,6 @@
-![build](https://github.com/containerbase/ruby/actions/workflows/build.yml/badge.svg)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containerbase/ruby)
-![GitHub](https://img.shields.io/github/license/containerbase/ruby)
+![build](https://github.com/containerbase/ruby-prebuild/actions/workflows/build.yml/badge.svg)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containerbase/ruby-prebuild)
+![GitHub](https://img.shields.io/github/license/containerbase/ruby-prebuild)
 
 # containerbase Ruby releases
 

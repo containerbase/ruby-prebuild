@@ -1,9 +1,9 @@
 {
-  "name": "containerbase-ruby",
+  "name": "containerbase-ruby-prebuild",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "repository": "https://github.com/containerbase/ruby.git",
+  "repository": "https://github.com/containerbase/ruby-prebuild.git",
   "author": "Michael Kriese <michael.kriese@visualon.de>",
   "scripts": {
     "lint": "run-s prettier",
