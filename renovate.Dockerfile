@@ -7,7 +7,7 @@ FROM scratch
 
 
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=2.7.2
+ENV RUBY_VERSION=2.7.3
 
 
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
