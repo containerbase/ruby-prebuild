@@ -8,7 +8,7 @@ FROM scratch
 
 # EOL: 2022-03-31
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=2.6.7
+ENV RUBY_VERSION=2.6.8
 
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
 ENV RUBY_VERSION=2.7.4
