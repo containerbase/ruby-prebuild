@@ -7,6 +7,7 @@
   "author": "Michael Kriese <michael.kriese@visualon.de>",
   "scripts": {
     "lint": "run-s prettier",
+    "prepare": "husky install",
     "prettier": "prettier \"{**/*,*}.*\" --check --ignore-unknown",
     "prettier:fix": "prettier \"{**/*,*}.*\" --write --ignore-unknown"
   },
