@@ -22,6 +22,7 @@ apt-get install -q -y \
   git \
   libssl-dev \
   libreadline-dev \
+  libyaml-dev \
   zlib1g-dev \
   ;
 
