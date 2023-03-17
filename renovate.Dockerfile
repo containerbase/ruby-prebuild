@@ -6,12 +6,18 @@
 # makes lint happy
 FROM scratch
 
-# EOL: 2022-03-31
+# EOL: 2023
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=2.6.8
+ENV RUBY_VERSION=2.7.7
 
+# EOL: 2024
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=2.7.4
+ENV RUBY_VERSION=3.0.5
 
+# EOL: 2025
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=3.0.2
+ENV RUBY_VERSION=3.1.3
+
+# EOL: 2026
+# renovate: datasource=ruby-version depName=ruby versioning=ruby
+ENV RUBY_VERSION=3.2.1
