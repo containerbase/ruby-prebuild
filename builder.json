@@ -3,7 +3,7 @@
   "depName": "ruby",
   "datasource": "ruby-version",
   "versioning": "ruby",
-  "startVersion": "2.7.0",
+  "startVersion": "3.0.5",
   "ignoredVersions": [],
-  "allowedVersions": "~2.7.7 || ~3.0.5 || >= 3.1.0"
+  "allowedVersions": "~3.0.5 || >= 3.1.0"
 }
