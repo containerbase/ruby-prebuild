@@ -48,6 +48,11 @@ if [[ ! -f "/usr/local/share/ruby-build/${VERSION}" ]]; then
   sed -i -E 's/#[a-z0-9]+"/"/' "/usr/local/share/ruby-build/${VERSION}"
 fi
 
+if [[ "${VERSION}" == "3.3.0" && "${ARCH}" == "aarch64" ]]; then
+  echo "Patching ${VERSION} for ${CODENAME}-${ARCH}"
+  export RUBY_CONFIGURE_OPTS="ASFLAGS=-mbranch-protection=pac-ret"
+fi
+
 echo "Building ${NAME} ${VERSION} for ${CODENAME}"
 ruby-build ${BUILD_ARGS} "${VERSION}" "/usr/local/${NAME}/${VERSION}"
 
