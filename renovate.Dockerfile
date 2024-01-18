@@ -16,4 +16,4 @@ ENV RUBY_VERSION=3.1.4
 
 # EOL: 2026-03-31
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=3.2.2
+ENV RUBY_VERSION=3.2.3
