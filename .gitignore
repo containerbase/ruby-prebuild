@@ -1,5 +1,2 @@
-.cache
-node_modules
-dist/
-data/
-.vs/
+/node_modules/
+/.pnpm-store/
