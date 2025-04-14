@@ -20,4 +20,4 @@ ENV RUBY_VERSION=3.3.8
 
 # EOL: TBD
 # renovate: datasource=ruby-version depName=ruby versioning=ruby
-ENV RUBY_VERSION=3.4.2
+ENV RUBY_VERSION=3.4.3
