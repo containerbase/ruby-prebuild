@@ -20,4 +20,6 @@ ENTRYPOINT [ "dumb-init", "--", "builder.sh" ]
 
 COPY bin /usr/local/bin
 
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+
 RUN install-builder.sh
