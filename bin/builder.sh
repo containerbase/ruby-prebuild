@@ -54,7 +54,12 @@ if [[ "${VERSION}" == "3.3.0" && "${ARCH}" == "aarch64" ]]; then
 fi
 
 echo "Building ${NAME} ${VERSION} for ${CODENAME}"
-ruby-build ${BUILD_ARGS} "${VERSION}" "/usr/local/${NAME}/${VERSION}"
+if ! ruby-build ${BUILD_ARGS} "${VERSION}" "/usr/local/${NAME}/${VERSION}"; then
+  echo "::group::Build logs for ${NAME} ${VERSION} on ${CODENAME}-${ARCH}"
+  grep --with-filename --text '' /tmp/ruby-build.*.log
+  echo "::endgroup::"
+  exit 1
+fi
 
 "/usr/local/${NAME}/${VERSION}/bin/ruby" -v
 
