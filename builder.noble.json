@@ -1,0 +1,9 @@
+{
+  "image": "ruby",
+  "depName": "ruby",
+  "datasource": "ruby-version",
+  "versioning": "ruby",
+  "startVersion": "4.0.10",
+  "ignoredVersions": [],
+  "reverse": true
+}
