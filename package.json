@@ -5,7 +5,9 @@
   "author": "Michael Kriese <michael.kriese@visualon.de>",
   "repository": "https://github.com/containerbase/ruby-prebuild.git",
   "scripts": {
-    "lint": "run-s oxfmt",
+    "lint": "run-s oxfmt lint:markdown",
+    "lint:markdown": "markdownlint-cli2 '**/*.md'",
+    "lint-fix:markdown": "markdownlint-cli2 --fix '**/*.md'",
     "prepare": "husky",
     "oxfmt": "oxfmt --check",
     "oxfmt-fix": "oxfmt"
@@ -13,6 +15,7 @@
   "devDependencies": {
     "husky": "9.1.7",
     "lint-staged": "17.6.2",
+    "markdownlint-cli2": "0.24.2",
     "npm-run-all2": "9.1.0",
     "oxfmt": "0.80.0"
   },
